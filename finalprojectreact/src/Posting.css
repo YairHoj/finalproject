@@ -1,8 +1,30 @@
 #allp {
+  width: 100%;
+  height: 91vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 500px;
+  justify-content: center;
+  background-size: 300% 300%;
+  overflow: hidden;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(59, 173, 227, 1) 0%,
+    rgba(87, 111, 230, 1) 25%,
+    rgba(152, 68, 183, 1) 51%,
+    rgba(255, 53, 127, 1) 100%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #all {
@@ -33,6 +55,7 @@
   padding-left: 30px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 20px;
+  color: white;
 }
 
 #exit-button-div {
@@ -77,6 +100,11 @@
   font-size: 20px;
   border: none;
   background: none;
+  color: white;
+}
+
+#new-post-input::placeholder {
+  color: white;
 }
 
 #new-post-input:focus {
@@ -117,7 +145,7 @@
   margin: 5px;
   height: 200px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr) 8fr;
+  grid-template-columns: 1fr, 1fr, 8fr;
   grid-template-rows: 1fr 4fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -135,6 +163,10 @@
   color: white;
   font-size: 20px;
   font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  grid-column: span 2;
+  padding-left: 20px;
 }
 
 #pfp {
@@ -146,9 +178,10 @@
 #timer-div {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding-right: 20px;
+  padding-top: 15px;
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
   color: white;
 }
 

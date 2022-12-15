@@ -43,7 +43,7 @@ export class Navbar extends Component {
   render() {
     return (
       <div id="alldiv">
-        <container id="navbar-container">
+        <div id="navbar-container">
           <a id="appnamediv" href="/">
             <p id="appname">AppName</p>
           </a>
@@ -54,9 +54,9 @@ export class Navbar extends Component {
                 height="35"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -92,9 +92,9 @@ export class Navbar extends Component {
                 height="35"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -114,9 +114,9 @@ export class Navbar extends Component {
                 height="35"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -130,7 +130,7 @@ export class Navbar extends Component {
             /> */}
             {/* {this.state.isHovering && <HoverText />} */}
           </div>
-        </container>
+        </div>
       </div>
     );
   }
