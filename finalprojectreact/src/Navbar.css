@@ -1,0 +1,63 @@
+#navbar-container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  /* border: 1px solid #c9c9c5; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#spacefiller {
+  height: 91.5vh;
+}
+
+#appname {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+}
+
+#appnamediv {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #a09edd;
+  transition: background-color 0.1s ease-out 30ms;
+  padding-left: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+#appnamediv:hover {
+  background-color: #a09eddb9;
+}
+
+#icons {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+.buttoninput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a09edd;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out 30ms;
+  padding: 1px;
+  color: black;
+}
+
+.buttoninput:hover {
+  background-color: rgb(153, 152, 193);
+}
+
+/* #username {
+  background-color: #b7b7b7;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out 30ms;
+}
+
+#username:hover {
+  background-color: #ddddd9;
+} */
