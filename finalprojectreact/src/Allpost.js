@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from "react";
 import Post from "./Post";
-import postinfo from "./Postinfo";
 
 function Allpost() {
-  // const [post, setPost] = useState();
-  // const getPostsDb = async () => {
-  //   const response = await fetch("url", {
-  //     method: "GET",
-  //   });
-  //   const data = response.json();
-  //   return setPost(data);
-  // };
-
-  // useEffect(() => {
-  //   getPostsDb();
-  // }, []);
+  const [text, setText] = useState([]);
+  const getPosts = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/postdata/", {
+        method: "GET",
+      });
+      const data = await response.json();
+      console.log(data);
+      return setText(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getPosts();
+  }, []);
 
   return (
     <div>
-      {postinfo.map((item, index) => {
-        console.log(item.text);
+      {text.map((item, index) => {
         return (
           <div key={index}>
-            <Post text={item.text} id={item.id} />
+            <Post text={item.posttext} id={item.postid} />
           </div>
         );
       })}

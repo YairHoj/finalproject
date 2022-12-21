@@ -7,7 +7,8 @@ function NewPost() {
 
   const handleClick = (event) => {
     // 👇️ access textarea value
-    console.log(ref.current.value);
+    const textInput = ref.current.value;
+    console.log(textInput);
   };
   return (
     <div id="allp">

@@ -8,6 +8,7 @@ class Post extends React.Component {
     this.state = {
       id: props.id,
       text: props.text,
+      title: props.title,
     };
   }
   render() {
